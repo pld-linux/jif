@@ -5,7 +5,7 @@ Release:	0.1
 License:	Apache v1.1
 Group:		Development/Languages/Java
 Source0:	http://www.cs.cornell.edu/jif/releases/%{name}-%{version}.zip
-# Source0-md5:	b32ba29f6d4a4a5e6f80b8de45cad31b
+# Source0-md5:	e657b80f3e19d6d0909a16af3a8b6b88
 Patch0:		%{name}-classpath.patch
 URL:		http://www.cs.cornell.edu/jif/
 BuildRequires:	ant >= 1.6.5-4
