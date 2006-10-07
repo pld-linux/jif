@@ -1,4 +1,5 @@
 Summary:	Jif: Java + information flow
+Summary(pl):	Jif (Java + information flow) - Java z przepływem informacji
 Name:		jif
 Version:	3.0.0
 Release:	0.1
@@ -17,17 +18,28 @@ Requires:	jre >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Jif is a security-typed programming language that extends Java
-with support for static information flow control.
+Jif is a security-typed programming language that extends Java with
+support for static information flow control.
 
-Static information flow control can protect the confidentiality
-and integrity of information manipulated by computing systems.
-The compiler tracks the correspondence between information
-the policies that restrict its use, enforcing security properties
-end-to-end within the system. After checking information flow
-within Jif programs, the Jif compiler translates them to Java
-programs and uses an ordinary Java compiler to produce secure
-executable programs.
+Static information flow control can protect the confidentiality and
+integrity of information manipulated by computing systems. The
+compiler tracks the correspondence between information the policies
+that restrict its use, enforcing security properties end-to-end within
+the system. After checking information flow within Jif programs, the
+Jif compiler translates them to Java programs and uses an ordinary
+Java compiler to produce secure executable programs.
+
+%description -l pl
+Jif to język programowania z bezpiecznymi typami rozszerzający Javę
+o obsługę statycznej kontroli przepływu informacji.
+
+Statyczna kontrola przepływu informacji może chronić poufność i
+spójność informacji przetwarzanych przez systemy obliczeniowe.
+Kompilator śledzi zgodność między informacjami a polityką
+ograniczającą ich użycie, wymuszając w systemie pożądane właściwości
+bezpieczeństwa. Po sprawdzeniu przepływu informacji w programach w
+Jifie kompilator tłumaczy je na programy w Javie i używa zwykłego
+kompilatora Javy do stworzenia bezpiecznych programów wykonywalnych.
 
 %prep
 %setup -q
@@ -62,7 +74,7 @@ sed -e "s|TOP=.*|TOP='%{_javadir}'|" \
 
 install lib/{JFlex,java_cup,jif,jiflib,jifrt,jifsig,polyglot}.jar $RPM_BUILD_ROOT%{_javadir}/%{name}/
 
-install lib/libjifrt.so $RPM_BUILD_ROOT%{_libdir}/%{name}/
+install lib/libjifrt.so $RPM_BUILD_ROOT%{_libdir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
