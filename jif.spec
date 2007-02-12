@@ -1,5 +1,5 @@
 Summary:	Jif: Java + information flow
-Summary(pl.UTF-8):   Jif (Java + information flow) - Java z przepĹywem informacji
+Summary(pl.UTF-8):	Jif (Java + information flow) - Java z przepĹywem informacji
 Name:		jif
 Version:	3.0.0
 Release:	0.1
