@@ -1,5 +1,5 @@
 Summary:	Jif: Java + information flow
-Summary(pl.UTF-8):	Jif (Java + information flow) - Java z przepĹywem informacji
+Summary(pl.UTF-8):	Jif (Java + information flow) - Java z przepływem informacji
 Name:		jif
 Version:	3.0.0
 Release:	0.1
@@ -30,16 +30,16 @@ Jif compiler translates them to Java programs and uses an ordinary
 Java compiler to produce secure executable programs.
 
 %description -l pl.UTF-8
-Jif to jÄzyk programowania z bezpiecznymi typami rozszerzajÄcy JavÄ
-o obsĹugÄ statycznej kontroli przepĹywu informacji.
+Jif to język programowania z bezpiecznymi typami rozszerzający Javę
+o obsługę statycznej kontroli przepływu informacji.
 
-Statyczna kontrola przepĹywu informacji moĹźe chroniÄ poufnoĹÄ i
-spĂłjnoĹÄ informacji przetwarzanych przez systemy obliczeniowe.
-Kompilator Ĺledzi zgodnoĹÄ miÄdzy informacjami a politykÄ
-ograniczajÄcÄ ich uĹźycie, wymuszajÄc w systemie poĹźÄdane wĹaĹciwoĹci
-bezpieczeĹstwa. Po sprawdzeniu przepĹywu informacji w programach w
-Jifie kompilator tĹumaczy je na programy w Javie i uĹźywa zwykĹego
-kompilatora Javy do stworzenia bezpiecznych programĂłw wykonywalnych.
+Statyczna kontrola przepływu informacji może chronić poufność i
+spójność informacji przetwarzanych przez systemy obliczeniowe.
+Kompilator śledzi zgodność między informacjami a polityką
+ograniczającą ich użycie, wymuszając w systemie pożądane właściwości
+bezpieczeństwa. Po sprawdzeniu przepływu informacji w programach w
+Jifie kompilator tłumaczy je na programy w Javie i używa zwykłego
+kompilatora Javy do stworzenia bezpiecznych programów wykonywalnych.
 
 %prep
 %setup -q
